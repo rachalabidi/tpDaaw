@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./myStyle.css">
     <script src="./myScriptResult.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing Up</title>
 </head>
@@ -54,11 +56,12 @@
     
                         <div class="group">
                             <label for="pass" class="label">Password</label>
-                            <input id="pass" name="pass" type="password" class="input" data-type="password" placeholder="write ur Password" required >
+                            <input id="pass" name="pass" type="password" class="input" data-type="password" placeholder="write ur Password" required onkeyup='check();' >
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Repeat Password</label>
-                            <input id="pass" type="password" class="input" data-type="password" placeholder="Rewrite ur Password" required >
+                            <label for="passC" class="label">Repeat Password</label>
+                            <input id="passC" type="password" class="input" data-type="password" placeholder="Rewrite ur Password"  required onkeyup='check();' >
+                            <span id='message'></span>
                         </div>
 
                        
@@ -82,5 +85,15 @@
       e.preventDefault();
       alert("the account has been created successfully...... TRY TO LOG ON");
     });
+    var check = function() {
+  if (document.getElementById('pass').value ==
+    document.getElementById('passC').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+};
     </script>
 </html>

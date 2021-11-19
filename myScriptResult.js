@@ -13,7 +13,7 @@ $(document).ready(function() {
               divs.not(("#" + $(this).attr("class"))).hide();                  
          });   
     })
-    
+  
    
 // TRYING LA METHOD GET BETWEEN 2 PAGES ACCUEIL "HOME" AND INDEX 
 window.addEventListener('load', () => {
@@ -30,3 +30,4 @@ $("#num").focusout(function() {
       if(!filter.test(num)) {
         $('#num').css('color' , 'red');
         $('#numFocus').addClass('fb-warning');}}});
+
