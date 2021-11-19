@@ -3,11 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <SCript src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></SCript>
+    <link rel="stylesheet" href="./myStyle.css">
+    <link rel="stylesheet" href="./acStyle.css">
     <script src="./myScriptResult.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UserPage</title>
 </head>
 <body>
-    <p > ur email is : <samp id='r-email'></samp></p>
+ <!-- structure te3 la page 
+    3andna img de la faculté + les info ( we can add a  user pic ila kfana lwa9t)
+    menu vertica a gouche 
+    ****liste des utilisateur
+    ****ajouter user
+    ****mod user 
+    *** sup user
+    Le reste de la page : qui affiche la liste des utilisateurs 
+    ou le formulaire d’ajout
+    ou le formulaire de modification 
+    ou le formulaire de suppression.
+    wahda men li derna haduk
+
+  -->
+  <header >
+    
+                 <div class="body admin-panel clearfix">
+                  <div class="slidebar">
+                     <div class="logo">
+                        <img src="./universite-abdelhamid-mehri-constantine-2-logo-3923299C66-seeklogo.com.png" style="font-size: 1.1em; margin-top: 15px; margin-left: 12px;"> </div> 
+                    
+                    <!-- navigation bar "slide-bar" menu vertica a gouche  -->
+                        <ul>
+                        <li> 
+                           <a class="home" href="#home">home<i class="sideicon fa fa-area-chart"></i></a></li>
+                        <li> 
+                           <a class="user" href="#user">user list<i class="sideicon fa fa-cube"></i></a></li>
+                        <li> 
+                           <a class="add" href="#add">add user<i class="sideicon fa fa-cube "></i></a></li>
+                        <li> 
+                           <a class="del" href="#del">delete user<i class="sideicon fa fa-file-text-o "></i></a></li>
+                        <li> 
+                           <a class="mod" href="#mod">modify user<i class="sideicon fa fa-file-text-o "></i></a></li>
+                        <li> 
+                          </li>
+                     </ul>
+                  </div>
+                  <div class="main">
+                    <h1> attendance management system</h1>
+                  </div>
+
+                 
+                
+                   <!-- sections  -->
+              <div class="mainContent" >
+                
+                  <div id="home" class="content-profile-page" style="display: none;" >
+                         
+                              <div class="profile-user-page card">
+                                <div class="img-user-profile">
+                                  <img class="profile-bgHome" src="./1625843956153.jpg" />
+                                  <img class="avatar" src="./User_font_awesome.svg.png" alt="userpic"/>
+                                </div>
+                                   
+                                    <div class="user-profile-data">
+                                   
+                                      <h2>Rasha Labidi</h2>
+
+                                      <p id='r-email'>racha.labidi@univ-constantine2.dz</p>
+                                      <P>Female</P>
+                                      <P>student</P>
+                                      <P>L3</P>
+                                      <P>Software engineering</P>
+                                     </div>
+                               
+                                <div class="hr"></div>
+                                <div class="foot-lnk">
+                                  <a href="./index.html"> BACK TO START ....</a>
+                                </div>
+                                </div>
+                              </div>
+
+                   </div>
+                 <div id="user"  style="display: none;">
+                  <section>
+  
+                    <h1>USER LIST</h1>
+                    <div class="tbl-header">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <thead>
+                          <th>
+                            <th>Code</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Birthday</th>
+                            <th>gender</th>
+                         </th>
+                        </thead>
+                      </table>
+                    </div>
+                    <div class="tbl-content">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>RASHA </td>
+                            <td>LABIDI</td>
+                            <td>13/03/2001</td>
+                            <td>F</td>
+                          </tr>
+                           <tr>
+                            <td>2</td>
+                            <td>DJOUMANA </td>
+                            <td>HIRECHE</td>
+                            <td>25/12/2001</td>
+                            <td>F</td>
+                          </tr>
+                            <tr>
+                            <td>3</td>
+                            <td>MALAK </td>
+                            <td>HADID</td>
+                            <td>25/1/2001</td>
+                            <td>F</td>
+                          </tr>
+                            <tr>
+                            <td>4</td>
+                            <td>OUSSAMA </td>
+                            <td>ARACH</td>
+                            <td>5/2/2001</td>
+                            <td>M</td>
+                          </tr>
+                            <tr>
+                            <td>5</td>
+                            <td>AMINA </td>
+                            <td>KHOUDJA</td>
+                            <td>6/7/2001</td>
+                            <td>F</td>
+                          </tr>
+                            <tr>
+                            <td>6</td>
+                            <td>ALI </td>
+                            <td>BOUTIBA</td>
+                            <td>5/8/2001</td>
+                            <td>M</td>
+                          </tr>
+                            <tr>
+                            <td>7</td>
+                            <td>AMINE </td>
+                            <td>ATAF</td>
+                            <td>8/2/2001</td>
+                            <td>M</td>
+                          </tr>
+                            <tr>
+                            <td>8</td>
+                            <td>HOUSSAM </td>
+                            <td>AYU</td>
+                            <td>5/8/2001</td>
+                            <td>M</td>
+                          </tr>
+                            <tr>
+                            <td>9</td>
+                            <td>ARIDJ </td>
+                            <td>HAMA</td>
+                            <td>25/1/2000</td>
+                            <td>F</td>
+                          </tr>
+                            <tr>
+                            <td>10</td>
+                            <td>LOFY </td>
+                            <td>ALAWA</td>
+                            <td>2/1/2000</td>
+                            <td>F</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                   </div>
+                <div id="add"  style="display: none;">
+                  <div   class="login-wrap">
+                    <div class="login-html">
+                              <h1>ADD USER</h1>
+                        
+                            <div class="login-form">
+                            <div class="sign-in-htm">
+                             <form>
+            
+                              <div class="group">
+                                <label for="u" class="label">Username</label>
+                                <input id="u" name="user" type="text" class="input" placeholder="write ur Username">
+                            </div>
+            
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="password" placeholder="enter ur password">
+                                </div>
+                
+          
+                                <BUTTON class="button"   value="ADD ">ADD </BUTTON>
+                             </form> 
+                            </div>
+                             </div>  
+                     </div>
+                  </div>      
+
+                </div>
+               <div id="del" style="display: none;">
+                 <div   class="login-wrap">
+                   <div class="login-html">
+                            <h1>DELETE USER</h1>
+                      
+                        <div class="login-form">
+                          <div class="sign-in-htm">
+                           <form>
+          
+                            <div class="group">
+                              <label for="u" class="label">Username</label>
+                              <input id="u" name="user" type="text" class="input" placeholder="write ur Username">
+                            </div>
+          
+                              <div class="group">
+                                  <label for="pass" class="label">Password</label>
+                                  <input id="pass" type="password" class="input" data-type="password" name="password" placeholder="enter ur password">
+                              </div>
+              
+        
+                              <BUTTON class="button"   value="DELETE ">DELETE </BUTTON>
+                           </form> 
+                          </div>
+                        </div>  
+                     </div>
+                  </div>      
+               </div>
+                    <div id="mod" style="display: none;">
+                      <div class="singup-wrap">
+                        <div class="singup-html">
+                                  <h1>MODIFY UR INFORMATION</h1>
+                            
+                              <div class="singup-form">
+                                <div class="sign-up-htm">
+                                   <form>
+                                        <div class="group">
+                                            <label for="user1" class="label">First name</label>
+                                            <input id="user1" name="prenom" type="text" class="input" placeholder="write ur First name">
+                                        </div>
+                                        <div class="group">
+                                            <label for="user1" class="label">Last name</label>
+                                            <input id="user1" name="prenom" type="text" class="input" placeholder="write ur Last name">
+                                        </div>
+                                        <div class="group">
+                                            <label for="birthday" class="label">Birthday</label>
+                                            <input id="birthday" type="date" class="input" name="birthday" >
+                                        </div>
+                                        <div class="group">
+                                            <label for="s" class="label">Gender</label>
+                                         <input type="radio" name="Gender" value="Male" />
+                                          <label>Male</label>
+                                          <br>
+                                          <input type="radio" name="Gender" value="Female" />
+                                        <label> Female</label> 
+                                        </div>
+                                        <div class="group">
+                                            <label for="num" class="label">Phone number</label>
+                                            <input id="num" type="tel" class="input" name="num" placeholder="write ur Phone number">
+                                        </div>    
+                                        <div class="group">
+                                            <label for="Email" class="label">Email</label>
+                                            <input id="Email" type="email" class="input" name="email" placeholder="write ur Email">
+                                        </div>
+                    
+                                        <div class="group">
+                                            <label for="pass" class="label">Password</label>
+                                            <input id="pass" name="pass" type="password" class="input" data-type="password" placeholder="write ur Password">
+                                        </div>
+                          
+                                        <BUTTON  class="button"   value="modify"> SAVE </BUTTON>
+                                        
+                                  </form> 
+                                </div>   
+                              </div>
+                        </div>
+                      </div>
+                   </div>
+                   </div>
+               </div>
+                         
+     
+     
+  </header>
+   
 </body>
+
 </html>

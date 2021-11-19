@@ -1,0 +1,198 @@
+
+/* MY STYLE FOR THE USER */
+  .card {
+    background: rgba(0,0,0,1);
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border: .1em solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em; 
+  }
+  
+  .profile-user-page .img-user-profile {
+    margin: 0 auto;
+    text-align: center; 
+  }
+  .profile-user-page .img-user-profile .profile-bgHome {
+    border-bottom: .2em solid #ff0000;
+    width: 44.23em;
+    height: 16em;
+    }
+  .profile-user-page .img-user-profile .avatar {
+    margin: 0 auto;
+    background: #fff;
+    width: 7em;
+    height: 7em;
+    padding: 0.25em;
+    border-radius: .4em;
+    margin-top: -10em;
+    box-shadow: 0 0 .1em rgba(0, 0, 0, 0.35);
+  }
+  
+  .profile-user-page .user-profile-data {
+    text-align: center;
+    padding: 0 1.5em; 
+  }
+  .profile-user-page .user-profile-data h2 {
+    font-family: "Lato", sans-serif;
+    margin-top: 0.35em;
+    color: #ff0000;
+    margin-bottom: 0.1em; 
+  }
+  .profile-user-page .user-profile-data p {
+      font-family: "Lato", sans-serif;
+    color: rgba(255,255,255,.5); 
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 0.5em; 
+  }
+  .body {
+    background-color: black;
+          border: 2px solid grey;
+    padding: 12px;
+          padding-right: 4px;
+          margin:0;
+    font-family: 'Roboto', sans-serif;
+  }
+  .clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+  }
+  
+  .admin-panel {
+    width: 990px;
+    margin: 20px auto;   
+    
+  }
+  /*slidebar*/
+  .slidebar {
+    width: 20%;
+    min-height: 750px;
+    float: left;
+    border-right: 1px solid rgb(235,235,235);
+    background-color: rgb(247,247,247);
+   }
+  .slidebar .logo {
+    height: 145px;
+    border-bottom: 1px solid rgb(235,235,235);
+    
+  }
+  .slidebar ul {
+    padding: 0;
+    margin: 0;
+    
+  }
+  .slidebar li {
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+    
+  }
+  .slidebar li:before {
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    position: absolute;
+    display: block;
+    line-height: 40px;
+    color: red;
+    right: 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .sideicon {
+    padding-top: 12px;
+    padding-right: 15px;
+    float: right;
+  }
+  
+  
+  .slidebar ul a {
+    color: red;
+    text-decoration: none;
+    font:16px/40px gotham,verdana,sans-serif;
+          box-sizing:border-box;
+    border-bottom: 1px solid rgb(235,235,235);
+    display: block;	text-indent: 17px;
+    text-transform: capitalize;
+  }
+  .slidebar li:hover a {
+    background-color: rgb(255,255,255);
+    box-shadow: 1px 0 0 rgb(255,255,255),inset 10px 0 0 -1px red;
+  }
+  .logo img {
+    
+      width: 88px;
+      height: 88px;
+      display: inline-block;
+      position: relative;
+      left: 25%;   
+      margin: -45px 0 0 -45px;
+      border: 1px solid rgb(200,200,200);
+      border-radius: 50%;
+     
+    }
+  /* THE STUDENT LISTEEEE */
+
+  section{
+    margin-left: 10%;
+  }
+h1{
+  font-size: 30px;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:auto;
+  table-layout: fixed;
+  margin: 0 auto;
+  background: -webkit-linear-gradient(left, RED, BLACK);
+  background: linear-gradient(to right, RED, BLACK);
+}
+
+.tbl-header{
+  background-color: rgba(255, 255, 255, 0);
+  
+ }
+.tbl-content{
+  height:auto;
+  
+  /* in case of bzzffffffff student lazy can't find more
+   overflow-x:auto; */
+ 
+  margin-top: 0px;
+  
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 25.7px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+
+
+
+
+
+
+  
+   

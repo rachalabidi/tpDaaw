@@ -5,32 +5,12 @@
 body{
 	margin:0;
 	color:#6a6f8c;
-	background:#0c0b0b9a;
+	/* background:#0c0b0b9a; */
+	background-image: url(./photo_2021-11-19_10-48-39.jpg);
+	background-position: center;
+	
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
-img{
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: auto;
-  }
-  
-  #login-button{
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 30px;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgba(0,0,0,1);
-    overflow: hidden;
-    opacity: 0.99;
-    box-shadow: 10px 10px 30px #000;}
 h1{
     text-align: center;
 }
@@ -45,8 +25,10 @@ a{color:inherit;text-decoration:underline}
 	background:
     no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-    display: none;
 }
+/* .login-wrap{
+	display: none;
+} */
 .singup-wrap{
     /* max-width:900px; */
     min-height:1000px;
@@ -125,5 +107,3 @@ a{color:inherit;text-decoration:underline}
 .foot-lnk{
 	text-align:center;
 }
-
-
